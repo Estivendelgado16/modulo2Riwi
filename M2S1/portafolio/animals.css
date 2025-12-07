@@ -43,3 +43,26 @@
 
     100% { transform: translateX(0); }          
 }
+
+.divBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    
+    
+}
+
+.btnBack {
+
+    width: 5%;
+    height: 5vh;
+    font-size: medium;
+    border-radius: 10%;
+    box-shadow: none;
+}
+
+.btnBack a {
+    text-decoration: none;
+    color: black;
+}
