@@ -8,27 +8,36 @@
 <body>
 
 <div class="container">
-   <h1>Añadir experiencia</h1>
+   <h1 class="experience">Añadir experiencia</h1>
    <div class="notify">
         <div class="notifyText">
             <h3>Notificar a tu red</h3>
-            <p>
-                Activa esta opción para notificar a tu red sobre los cambios más importantes
-                en tu perfil (como nuevos empleos) y los aniversarios de trabajo.
-            </p>
-            <a href="">Obtén más información sobre cómo compartir los cambios de tu perfil</a>
-        </div>
-        <label class="switch">
+            <label class="switch">
             <input type="checkbox" checked>
-            <span class="slider"></span>
-        </label>
+                <span class="slider"></span>
+            </label>
+            
+            
+        </div>
+        
+        <p>
+            Activa esta opción para notificar a tu red sobre los cambios más importantes
+            en tu perfil (como nuevos empleos) y los aniversarios de trabajo.
+        </p>
+    
+        
    </div>
+   
 
-   <label class="red">Notifica a tu red de los cambios importantes de tu perfil</label>
+   <label class="red">
+    <p>Notifica a tu red de los cambios importantes de tu perfil</p>
+    <input type="checkbox" checked>
 
-   <div class="forGroup">
+   </label>
+
+   <div class="formGroup">
         <label>Cargo</label>
-        <input type="text">
+        <input type="text" value="Team Leader">
    </div>
 
    <div class="suggestions">
@@ -40,18 +49,20 @@
         <p>Un cargo más especifico ayudará a que los demás entiendan mejor lo que haces.</p>
    </div>
 
-   <div class="formGroup">
-        <h2>tipo de empleo</h2>
-        <select>
-            <option> jornada completa</option>
-            <option> jornada jornada mañana</option>
-            <option> jornada jornada noche</option>
-        </select>
+   <div class="formGroup formGroup--option">
+        <div class="formGroup-colum">
+            <h2>tipo de empleo</h2>
+            <select>
+                <option> jornada completa</option>
+                <option> jornada jornada mañana</option>
+                <option> jornada jornada noche</option>
+            </select>
+        </div>
    </div>
 
-   <div class="formGroup">
+   <div class="formGroup formGroup--option">
         <h2>Empresa</h2>
-        <input type="placeholder">
+        <input type="placeholder" value="Riwi.io">
    </div>
 
    <div class="formGroup">
@@ -59,7 +70,12 @@
             
             <label class="formColumn">
                 <h4>Actualmente tebgo este cargo</h4>
-                <input type="text" >obligatorio
+                <input type="text" value="obligatorio">
+            </label>
+            <label>
+                <h4>fecha de inicio</h4>
+                <input type="text" value="Julio">
+                <input type="text" value="2025">
             </label>
         </div>
    </div>
