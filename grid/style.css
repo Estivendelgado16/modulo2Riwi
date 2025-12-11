@@ -1,0 +1,63 @@
+body{
+    padding: 20px;
+}
+
+header{
+    background-color: #FADCD9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.name{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contLinks{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width: auto;
+}
+
+.contLinks a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.content{
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+
+.slogan-intro{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+    border-radius: 10px;
+    background-color: #FADCD9;
+}
+
+.text{
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+.brallam{
+    display: grid;
+    border-radius: 10px;
+    background-color: #FADCD9;
+}
+
+
