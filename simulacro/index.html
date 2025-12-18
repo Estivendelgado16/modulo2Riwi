@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogr - Ejemplo Sencillo</title>
+
+    <!-- Fuentes de Google (Tipografía) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Nuestro archivo de estilos -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         ENCABEZADO (Header)
+         Contiene: Logo, Menú y Texto de Introducción
+    ========================================= -->
+    <header class="header">
+        <div class="contenedor header-grid">
+
+            <!-- 1. Logo -->
+            <div>
+                <h1>Blog Yin</h1>
+            </div>
+
+            <!-- 2. Botón del Menú Móvil (Hamburguesa) 
+                 Usamos un truco con 'checkbox' para no usar JavaScript. 
+            -->
+            <input type="checkbox" id="menu-check" class="menu-checkbox">
+            <label for="menu-check" class="menu-boton">
+                ☰ <!-- Icono de menú simple -->
+            </label>
+
+            <!-- 3. Navegación Principal -->
+            <nav class="navegacion">
+                <!-- Lista de enlaces -->
+                <ul class="menu-lista">
+                    <!-- Menú Desplegable: Producto -->
+                    <li class="menu-item">
+                        <details>
+                            <summary>Producto</summary>
+                            <ul class="submenu">
+                                <li><a href="#">Descripción</a></li>
+                                <li><a href="#">Precios</a></li>
+                                <li><a href="#">Mercado</a></li>
+                            </ul>
+                        </details>
+                    </li>
+
+                    <!-- Menú Desplegable: Compañía -->
+                    <li class="menu-item">
+                        <details>
+                            <summary>Compañía</summary>
+                            <ul class="submenu">
+                                <li><a href="#">Sobre nosotros</a></li>
+                                <li><a href="#">Equipo</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </details>
+                    </li>
+
+                    <!-- Menú Desplegable: Conectar -->
+                    <li class="menu-item">
+                        <details>
+                            <summary>Conectar</summary>
+                            <ul class="submenu">
+                                <li><a href="#">Contacto</a></li>
+                                <li><a href="#">Boletín</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+
+                <!-- Botones de Acceso -->
+                <div class="botones-header">
+                    <a href="#" class="btn btn-transparente">Login</a>
+                    <a href="#" class="btn btn-blanco">Registro</a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Texto Hero (Título Principal) -->
+        <div class="hero contenedor">
+            <h2>Una plataforma de publicación moderna</h2>
+            <p>Haz crecer tu audiencia y construye tu marca online.</p>
+            <div class="hero-acciones">
+                <a href="#" class="btn btn-blanco">Empezar</a>
+                <a href="#" class="btn btn-borde">Saber más</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- =========================================
+         CONTENIDO PRINCIPAL (Main)
+    ========================================= -->
+    <main>
+
+        <!-- SECCIÓN 1: Características -->
+        <section class="bloque contenedor">
+            <h3 class="titulo-seccion">Diseñado para el futuro</h3>
+
+            <!-- Grid: Texto a la izquierda, Imagen a la derecha -->
+            <div class="grid-2-columnas">
+                <div class="grid-texto">
+                    <article>
+                        <h4>Editor Extensible</h4>
+                        <p>Blogr presenta una interfaz de edición muy intuitiva. Te ayuda a concentrarte en escribir sin
+                            distracciones.</p>
+                    </article>
+                    <article>
+                        <h4>Gestión de Contenido</h4>
+                        <p>Organiza tus blogs y contenidos de manera flexible, adaptándose a tu forma de trabajar.</p>
+                    </article>
+                </div>
+                <!-- Círculo decorativo (simulando imagen) -->
+                <div class="grid-imagen">
+                    <div class="circulo-demo"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: Infraestructura (Fondo Oscuro) -->
+        <section class="bloque fondo-oscuro">
+            <div class="contenedor grid-2-columnas reverse">
+                <div class="grid-imagen">
+                    <div class="movil-demo"></div>
+                </div>
+                <div class="grid-texto">
+                    <h3>Infraestructura avanzada</h3>
+                    <p>Servidores rápidos en todo el mundo aseguran que tu sitio cargue al instante, sin importar dónde
+                        estén tus lectores.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: Detalles (Laptop) -->
+        <section class="bloque contenedor">
+            <div class="grid-2-columnas">
+                <div class="grid-imagen">
+                    <img src="./img/circulo.avif" alt="" style="width: 230px; height: 230px;">
+                </div>
+                <div class="grid-texto">
+                    <article>
+                        <h4>Gratis y Abierto</h4>
+                        <p>Blogr es una plataforma libre. Nuestra comunidad ayuda a mantenerla potente y sencilla.</p>
+                    </article>
+                    <article>
+                        <h4>Herramientas Poderosas</h4>
+                        <p>Incluye análisis, dominios personalizados y todo lo que necesitas para crecer.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========================================
+         PIE DE PÁGINA (Footer)
+    ========================================= -->
+    <footer class="footer">
+        <div class="contenedor footer-grid">
+            <div class="footer-logo">
+                <h2>Blog de Yil</h2>
+            </div>
+
+            <div class="columna-enlaces">
+                <h4>Producto</h4>
+                <a href="#">Descripción</a>
+                <a href="#">Precios</a>
+                <a href="#">Mercado</a>
+            </div>
+
+            <div class="columna-enlaces">
+                <h4>Compañía</h4>
+                <a href="#">Equipo</a>
+                <a href="#">Blog</a>
+                <a href="#">Carreras</a>
+            </div>
+
+            <div class="columna-enlaces">
+                <h4>Conectar</h4>
+                <a href="#">Contacto</a>
+                <a href="#">Boletín</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
