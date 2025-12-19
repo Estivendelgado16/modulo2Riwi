@@ -111,11 +111,10 @@ header{
     line-height: 95%;
     letter-spacing: 0%;
     padding: 0% 8%;
-    
-    
 }
 
 .textSlogan span{
+    display: flex;
     font-family: 'Gilroy', sans-serif;
     font-weight: 200;
     font-style: italic;
@@ -273,4 +272,124 @@ header{
     text-transform: uppercase;
 
     
+}
+
+
+@media (max-width: 1024px){
+
+    body{
+        padding: 24px;
+    }
+
+    header{
+        padding: 20px 32px;
+    }
+
+    .content{
+        grid-template-columns: 1fr;
+    }
+
+    .conText{
+        grid-template-columns: 1fr;
+    }
+
+    .contAbout{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .textSlogan p,
+    .textSlogan span{
+        font-size: 50px;
+    }
+
+    .contP p{
+        font-size: 44px;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    body{
+        padding: 16px;
+    }
+
+    header{
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contLinks{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .contLinks a{
+        margin-left: 0;
+    }
+
+    /* MAIN CONTENT */
+    .content{
+        grid-template-columns: 1fr;
+    }
+
+    .conText{
+        grid-template-columns: 1fr;
+    }
+
+    .textSlogan p,
+    .textSlogan span{
+        font-size: 36px;
+    }
+
+    .imgSlogan{
+        justify-content: center;
+    }
+
+    .imgSlogan img{
+        padding: 20px;
+    }
+
+    /* ABOUT */
+    .contAbout{
+        grid-template-columns: 1fr;
+    }
+
+    .about p{
+        width: auto;
+        padding: 0 8% 8%;
+    }
+
+    /* CONTACT */
+    .contact{
+        padding: 10%;
+    }
+
+    .contP p{
+        font-size: 36px;
+    }
+
+    /* WORK */
+    .contWork{
+        grid-template-rows: auto auto;
+    }
+
+    .work{
+        padding: 8%;
+    }
+
+    .item1{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    /* SOCIALS */
+    .socials a{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
